@@ -1,4 +1,4 @@
-# Hotel Webpage
+# Hamburger Menu
 
 This project is a CSS only hamburger menu operation.  No JS to mess with
 
