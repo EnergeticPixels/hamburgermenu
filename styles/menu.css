@@ -39,6 +39,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.4s ease;
 }
 /* hamburger lines - top and bottom */
 .menu-wrap .hamburger > div::before,
@@ -53,4 +54,19 @@
 }
 .menu-wrap .hamburger > div::after {
   top: 10px;
+}
+
+/* TOGGLER ANIMATION */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+/*    TURNS HAMBURGER into X */
+.menu-wrap .toggler:checked + .hamburger > div::before,
+.menu-wrap .toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+/*    ROTATE ON HOVER when CHECKED */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
 }
